@@ -22,6 +22,6 @@ app.get('/:id',function(req,res){
 })
 
 //process.env.PORT is the one used in heroku
-app.listen(process.env.PORT||$PORT, function () {
+app.listen(process.env.PORT||8080, function () {
   console.log('timestamp microservice is listening on port!')
 })
