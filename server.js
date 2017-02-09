@@ -2,6 +2,10 @@ var express = require('express')
 var app = express()
 var moment = require('moment')
 
+app.get('/',function(req,res){
+  res.send(" pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date")
+})
+
 app.get('/:id',function(req,res){
   console.log(new Date(), req.method, req.url);
   var objDate = {"unix": null, "natural": null}
